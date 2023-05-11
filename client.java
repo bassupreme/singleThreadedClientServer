@@ -12,9 +12,12 @@ class client {
 		try {
 
 			// creating socket.
+			System.out.println("Client setting up:");
 			Socket socket =  new Socket("localhost", portNumber);
 			PrintWriter    outServer	= new PrintWriter(socket.getOutputStream(), true);
 			BufferedReader inServer		= new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			System.out.println("connesso!");
+
 			BufferedReader inKeyboard = null;
 			do {
 
