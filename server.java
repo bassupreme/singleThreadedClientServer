@@ -8,6 +8,8 @@ public class server {
 			String inputline = "";
 			final String msg = "ciao client! ";
 			final int portNumber = 1234;
+
+			System.out.println("Server setting up ... ");
 			ServerSocket serverSocket = new ServerSocket(portNumber);
 
 			Socket soc	= serverSocket.accept(); // accept ritorna solo un socket.
